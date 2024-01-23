@@ -18,7 +18,7 @@ The timeout is specified through the sleep command on the next line. Upon comple
   CMD /bin/bash -c "nginx -g 'daemon off;' & sleep 86400 && kill -9 0"
 ```
 
-**Dislaimer**: None of the containers closed through timeout return Exit(0). Nginx container will exit with code ... and Deepaas containers will exit with code ...
+**Dislaimer**: None of the containers closed through timeout return Exit(0). Nginx container will exit with code 137 and Deepaas containers will exit with code 143.
  <!-- TODO: Complete disclaimer with correct exit codes -->
 
 ## Implementation example
